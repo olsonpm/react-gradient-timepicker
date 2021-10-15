@@ -1,4 +1,5 @@
-import React, {PropTypes, Component} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {getColorStyles, style as commonStyles} from './style';
 import { appendZero, getFormat12, format12to24, format24to12, isMousePressed } from './utils';
 
@@ -152,7 +153,7 @@ export default class TimePicker extends Component {
     event.preventDefault();
     this.changeClock(event.changedTouches[0].clientX, event.changedTouches[0].clientY);
   };
-  
+
   handleTouchUp = (event) => {
     if (event.target === this.mask) return;
     this.changeClock(event.changedTouches[0].clientX, event.changedTouches[0].clientY);

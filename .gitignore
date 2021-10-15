@@ -3,5 +3,4 @@
 *.iml
 out
 /node_modules/
-/build
 npm-debug.log

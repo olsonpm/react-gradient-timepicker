@@ -1,10 +1,12 @@
 /* eslint func-names: 0 */
+import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import { expect } from 'chai';
 import Timepicker from '../timepicker';
-import { mount } from 'enzyme';
+import Enzyme, { mount } from 'enzyme';
 import React from 'react';
 import sinon from 'sinon';
 
+Enzyme.configure({ adapter : new Adapter() });
 
 describe('Timepicker', function() {
   before(function() {
