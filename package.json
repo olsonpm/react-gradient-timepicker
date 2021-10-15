@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "description": "React Timepicker",
   "scripts": {
-    "dev": "node webpacker-server.js",
+    "dev": "node webpack-server.js",
     "test": "mocha --require ./src/test/utils.js --compilers js:babel-core/register --reporter spec ./src/test",
     "build": "rm -rf ./build && babel src/timepicker -d build/"
   },

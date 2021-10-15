@@ -9,7 +9,7 @@ export default class TimePicker extends Component {
     theme       : PropTypes.string,
     color1      : PropTypes.string,
     headerColor : PropTypes.string,
-    placeholder : PropTypes.string.isRequired,
+    placeholder : PropTypes.string,
     className   : PropTypes.string,
     onSet       : PropTypes.func.isRequired,
     style       : PropTypes.object
