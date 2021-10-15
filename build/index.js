@@ -611,7 +611,7 @@ TimePicker.propTypes = {
   theme: _propTypes2.default.string,
   color1: _propTypes2.default.string,
   headerColor: _propTypes2.default.string,
-  placeholder: _propTypes2.default.string.isRequired,
+  placeholder: _propTypes2.default.string,
   className: _propTypes2.default.string,
   onSet: _propTypes2.default.func.isRequired,
   style: _propTypes2.default.object
